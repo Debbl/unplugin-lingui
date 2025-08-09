@@ -1,7 +1,7 @@
 {
   "name": "unplugin-lingui",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@10.14.0",
   "description": "starter-ts",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
