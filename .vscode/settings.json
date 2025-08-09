@@ -1,5 +1,17 @@
 {
   "eslint.useFlatConfig": true,
+  // do not want to autofix some rules on save
+  "eslint.codeActionsOnSave.rules": [
+    "!prefer-const",
+    "!unused-imports/no-unused-imports",
+    "*"
+  ],
+  "eslint.rules.customizations": [
+    {
+      "rule": "no-console",
+      "severity": "warn"
+    }
+  ],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["esbuild", "lingui", "tsdown"]
+  "cSpell.words": ["esbuild", "lingui", "rolldown", "rspack", "tsdown", "Vite"]
 }
