@@ -6,7 +6,7 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["packages/unplugin-lingui/src/*"]
     },
     "resolveJsonModule": true,
     "strict": true,
