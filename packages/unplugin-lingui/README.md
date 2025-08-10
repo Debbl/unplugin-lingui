@@ -16,8 +16,6 @@ export default defineConfig({
 })
 ```
 
-Example: [`playground/`](./playground/)
-
 <br></details>
 
 <details>
