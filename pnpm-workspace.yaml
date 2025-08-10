@@ -1,8 +1,9 @@
-onlyBuiltDependencies:
-  - esbuild
-  - simple-git-hooks
-  - unrs-resolver
-
 packages:
   - playground
   - packages/*
+
+onlyBuiltDependencies:
+  - '@swc/core'
+  - esbuild
+  - simple-git-hooks
+  - unrs-resolver

@@ -72,6 +72,7 @@
     "simple-git-hooks": "^2.13.1",
     "tsdown": "^0.13.4",
     "typescript": "^5.9.2",
+    "vite": "^7.1.1",
     "vitest": "^3.2.4",
     "webpack": "^5.101.0"
   }
