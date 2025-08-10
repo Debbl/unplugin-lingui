@@ -1,0 +1,116 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should compile catalog in json format 1`] = `
+{
+  key: [
+    Message,
+  ],
+  key2: [
+    Hello ,
+    [
+      name,
+    ],
+  ],
+}`;
+
+exports[`should compile catalog in po format 1`] = `
+{
+  "ED2Xk0": [
+    "String from template",
+  ],
+  "mVmaLu": [
+    "My name is ",
+    [
+      "name",
+    ],
+  ],
+  "mY42CM": [
+    "Hello World",
+  ],
+}
+`;
+
+exports[`should compile catalog with relative path with no warnings 1`] = `
+{
+  "ED2Xk0": [
+    "String from template",
+  ],
+  "mVmaLu": [
+    "My name is ",
+    [
+      "name",
+    ],
+  ],
+  "mY42CM": [
+    "Hello World",
+  ],
+}
+`;
+
+exports[`unplugin-lingui > should compile catalog in po format 1`] = `
+{
+  "ED2Xk0": [
+    "String from template",
+  ],
+  "mVmaLu": [
+    "My name is ",
+    [
+      "name",
+    ],
+  ],
+  "mY42CM": [
+    "Hello World",
+  ],
+}
+`;
+
+exports[`unplugin-lingui > should compile catalog with relative path with no warnings 1`] = `
+{
+  "ED2Xk0": [
+    "String from template",
+  ],
+  "mVmaLu": [
+    "My name is ",
+    [
+      "name",
+    ],
+  ],
+  "mY42CM": [
+    "Hello World",
+  ],
+}
+`;
+
+exports[`unplugin-lingui loader > should compile catalog in po format 1`] = `
+{
+  "ED2Xk0": [
+    "String from template",
+  ],
+  "mVmaLu": [
+    "My name is ",
+    [
+      "name",
+    ],
+  ],
+  "mY42CM": [
+    "Hello World",
+  ],
+}
+`;
+
+exports[`unplugin-lingui loader > should compile catalog with relative path with no warnings 1`] = `
+{
+  "ED2Xk0": [
+    "String from template",
+  ],
+  "mVmaLu": [
+    "My name is ",
+    [
+      "name",
+    ],
+  ],
+  "mY42CM": [
+    "Hello World",
+  ],
+}
+`;

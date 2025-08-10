@@ -61,6 +61,7 @@
   "dependencies": {
     "@lingui/cli": "^5.4.0",
     "@lingui/conf": "^5.4.0",
+    "@lingui/format-json": "^5.4.0",
     "unplugin": "^2.3.5"
   },
   "devDependencies": {
@@ -71,6 +72,7 @@
     "simple-git-hooks": "^2.13.1",
     "tsdown": "^0.13.4",
     "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "webpack": "^5.101.0"
   }
 }

@@ -10,7 +10,7 @@ import {
 import { getConfig } from '@lingui/conf'
 import { createUnplugin } from 'unplugin'
 
-export interface LinguiPluginOpts {
+export interface LinguiPluginOptions {
   cwd?: string
   configPath?: string
   skipValidation?: boolean
@@ -26,7 +26,7 @@ export interface LinguiPluginOpts {
   failOnCompileError?: boolean
 }
 
-export const unpluginFactory = createUnplugin<LinguiPluginOpts | undefined>(
+export const unpluginFactory = createUnplugin<LinguiPluginOptions | undefined>(
   ({ failOnMissing, failOnCompileError, ...linguiConfig } = {}) => {
     const config = getConfig(linguiConfig)
 
@@ -64,13 +64,10 @@ Please check that catalogs.path is filled properly.\n`,
           const dependency = await getCatalogDependentFiles(catalog, locale)
           dependency.forEach((file) => this.addWatchFile(file))
 
-          if (!config.fallbackLocales || !config.sourceLocale) {
-            throw new Error('fallbackLocales or sourceLocale is not set')
-          }
           const { messages, missing: missingMessages } =
             await catalog.getTranslations(locale, {
-              fallbackLocales: config.fallbackLocales,
-              sourceLocale: config.sourceLocale,
+              fallbackLocales: config.fallbackLocales!,
+              sourceLocale: config.sourceLocale!,
             })
 
           if (
@@ -107,7 +104,7 @@ Please check that catalogs.path is filled properly.\n`,
                 }These errors fail build because \`failOnCompileError=true\` in Lingui Vite plugin configuration.`,
               )
             } else {
-              console.warn(
+              this.warn(
                 `${
                   message
                 }You can fail the build on these errors by setting \`failOnCompileError=true\` in Lingui Vite Plugin configuration.`,
