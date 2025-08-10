@@ -29,12 +29,32 @@ export interface LinguiPluginOptions {
 export const unpluginFactory = createUnplugin<LinguiPluginOptions | undefined>(
   ({ failOnMissing, failOnCompileError, ...linguiConfig } = {}) => {
     const config = getConfig(linguiConfig)
+    const formatToExtensionMap = {
+      'po': 'po',
+      'po-gettext': 'po',
+      'minimal': 'json',
+      'lingui': 'json',
+      'csv': 'csv',
+    }
+    const catalogFormat = config.format
+
+    const catalogExtension =
+      typeof catalogFormat === 'string'
+        ? formatToExtensionMap[catalogFormat]
+        : catalogFormat?.catalogExtension
+    const fileExtension = catalogExtension?.startsWith('.')
+      ? catalogExtension.slice(1)
+      : catalogExtension
+
+    if (!fileExtension) {
+      throw new Error('catalogExtension is not set')
+    }
 
     return {
       name: 'unplugin-lingui',
       transform: {
         filter: {
-          id: /(\.po|\?lingui)$/,
+          id: new RegExp(`(\\.${fileExtension}|\\?lingui)$`),
         },
         async handler(code, id) {
           if (!config.rootDir) {
@@ -89,7 +109,7 @@ Please check that catalogs.path is filled properly.\n`,
             locale,
             messages,
             {
-              namespace: 'es',
+              namespace: fileExtension === 'json' ? 'json' : 'es',
               pseudoLocale: config.pseudoLocale,
             },
           )

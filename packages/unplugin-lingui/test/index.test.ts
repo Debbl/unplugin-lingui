@@ -42,7 +42,7 @@ describe('unplugin-lingui', () => {
     expect((await data.load()).messages).toMatchSnapshot()
   })
 
-  it('should compile catalog in json format', { todo: true }, async () => {
+  it('should compile catalog in json format', async () => {
     const built = await build(
       path.join(__dirname, './json-format/entrypoint.js'),
     )
