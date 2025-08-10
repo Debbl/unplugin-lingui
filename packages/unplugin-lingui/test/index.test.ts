@@ -1,8 +1,8 @@
 /* eslint-disable n/prefer-global/process */
 import fs from 'node:fs/promises'
 import path from 'node:path'
-import { afterAll, describe, expect, it } from 'vitest'
-import { build, watch } from './compiler'
+import { afterAll, beforeAll, describe, expect, it } from 'vitest'
+import { build, tempDir, watch } from './compiler'
 
 async function copyFixture(srcPath: string) {
   const fixturesDir = path.join(process.cwd(), '_fixtures')
@@ -27,11 +27,16 @@ async function cleanupFixtures() {
   } catch {}
 }
 
-describe('unplugin-lingui', () => {
-  afterAll(async () => {
-    await cleanupFixtures()
-  })
+beforeAll(async () => {
+  await fs.mkdir(tempDir, { recursive: true })
+})
 
+afterAll(async () => {
+  await cleanupFixtures()
+  await fs.rm(tempDir, { recursive: true, force: true })
+})
+
+describe('unplugin-lingui', () => {
   it('should compile catalog in po format', async () => {
     const built = await build(path.join(__dirname, 'po-format/entrypoint.js'))
 

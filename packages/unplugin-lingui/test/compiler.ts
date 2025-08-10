@@ -1,6 +1,4 @@
 /* eslint-disable n/prefer-global/process */
-import { mkdtempSync } from 'node:fs'
-import os from 'node:os'
 import path from 'node:path'
 import webpack from 'webpack'
 import Lingui from '../src/webpack'
@@ -76,6 +74,8 @@ export function watch(
   }
 }
 
+let count = 0
+export const tempDir = path.join(process.cwd(), '_temp')
 export function getCompiler(
   entryPoint: string,
   loaderOptions: LinguiPluginOptions,
@@ -85,10 +85,13 @@ export function getCompiler(
     target: 'node',
     entry: entryPoint,
     plugins: [Lingui(loaderOptions)],
+    experiments: {
+      outputModule: true,
+    },
     output: {
-      path: mkdtempSync(path.join(os.tmpdir(), `lingui-test-${process.pid}`)),
+      path: path.join(tempDir, `lingui-test-${count++}`),
       filename: 'bundle.js',
-      libraryTarget: 'commonjs',
+      libraryTarget: 'module',
     },
   })!
 }
