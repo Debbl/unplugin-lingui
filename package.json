@@ -4,15 +4,15 @@
   "version": "0.0.2",
   "private": true,
   "packageManager": "pnpm@10.14.0",
-  "description": "starter-ts",
+  "description": "unplugin-lingui-monorepo",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
-  "homepage": "https://github.com/Debbl/starter-ts#readme",
+  "homepage": "https://github.com/Debbl/unplugin-lingui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Debbl/starter-ts.git"
+    "url": "git+https://github.com/Debbl/unplugin-lingui.git"
   },
-  "bugs": "https://github.com/Debbl/starter-ts/issues",
+  "bugs": "https://github.com/Debbl/unplugin-lingui/issues",
   "scripts": {
     "build": "pnpm --filter unplugin-lingui build",
     "test": "pnpm --filter unplugin-lingui test",
@@ -30,16 +30,11 @@
   "devDependencies": {
     "@debbl/eslint-config": "^3.12.1",
     "@types/node": "^24.2.1",
-    "@vitejs/plugin-react": "^5.0.0",
     "bumpp": "^10.2.2",
     "eslint": "^9.33.0",
     "lint-staged": "^16.1.5",
     "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.13.4",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.1",
-    "vite-inspector": "^0.1.4",
-    "vitest": "^3.2.4"
+    "typescript": "^5.9.2"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
