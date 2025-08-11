@@ -15,5 +15,4 @@ export default defineConfig({
   dts: {
     sourcemap: true,
   },
-  exports: true,
 })

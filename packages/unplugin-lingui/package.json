@@ -59,9 +59,9 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@lingui/cli": "^5.4.0",
-    "@lingui/conf": "^5.4.0",
-    "@lingui/format-json": "^5.4.0",
+    "@lingui/cli": "^5.4.1",
+    "@lingui/conf": "^5.4.1",
+    "@lingui/format-json": "^5.4.1",
     "unplugin": "^2.3.5"
   },
   "devDependencies": {
@@ -70,7 +70,7 @@
     "eslint": "^9.33.0",
     "lint-staged": "^16.1.5",
     "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.13.4",
+    "tsdown": "^0.14.0",
     "typescript": "^5.9.2",
     "vite": "^7.1.1",
     "vitest": "^3.2.4",
