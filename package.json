@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.4",
   "private": true,
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.0",
   "description": "unplugin-lingui-monorepo",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
@@ -25,12 +25,12 @@
   "dependencies": {
     "@lingui/cli": "^5.4.1",
     "@lingui/conf": "^5.4.1",
-    "unplugin": "^2.3.5"
+    "unplugin": "^2.3.8"
   },
   "devDependencies": {
     "@debbl/eslint-config": "^3.12.1",
-    "@types/node": "^24.2.1",
-    "bumpp": "^10.2.2",
+    "@types/node": "^24.3.0",
+    "bumpp": "^10.2.3",
     "eslint": "^9.33.0",
     "lint-staged": "^16.1.5",
     "simple-git-hooks": "^2.13.1",
