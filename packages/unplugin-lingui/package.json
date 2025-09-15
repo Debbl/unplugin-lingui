@@ -2,7 +2,7 @@
   "name": "unplugin-lingui",
   "type": "module",
   "version": "0.0.4",
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.16.1",
   "description": "unplugin for lingui",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
