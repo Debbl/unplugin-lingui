@@ -2,7 +2,7 @@
   "name": "unplugin-lingui",
   "type": "module",
   "version": "0.0.4",
-  "packageManager": "pnpm@10.18.0",
+  "packageManager": "pnpm@10.18.3",
   "description": "unplugin for lingui",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
@@ -59,21 +59,21 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@lingui/cli": "^5.5.0",
-    "@lingui/conf": "^5.5.0",
-    "@lingui/format-json": "^5.5.0",
+    "@lingui/cli": "^5.5.1",
+    "@lingui/conf": "^5.5.1",
+    "@lingui/format-json": "^5.5.1",
     "unplugin": "^2.3.10"
   },
   "devDependencies": {
-    "@types/node": "^24.3.1",
-    "bumpp": "^10.2.3",
-    "eslint": "^9.35.0",
-    "lint-staged": "^16.1.6",
+    "@types/node": "^24.7.2",
+    "bumpp": "^10.3.1",
+    "eslint": "^9.37.0",
+    "lint-staged": "^16.2.4",
     "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.15.0",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.5",
+    "tsdown": "^0.15.7",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.10",
     "vitest": "^3.2.4",
-    "webpack": "^5.101.3"
+    "webpack": "^5.102.1"
   }
 }
