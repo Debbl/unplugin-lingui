@@ -1,7 +1,7 @@
 {
   "name": "unplugin-lingui-monorepo",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "packageManager": "pnpm@10.20.0",
   "description": "unplugin-lingui-monorepo",
