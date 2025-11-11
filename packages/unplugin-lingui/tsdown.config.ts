@@ -12,6 +12,8 @@ export default defineConfig({
     'src/webpack.ts',
   ],
   sourcemap: true,
+  clean: true,
+  exports: true,
   dts: {
     sourcemap: true,
   },

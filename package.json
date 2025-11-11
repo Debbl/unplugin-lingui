@@ -28,7 +28,7 @@
     "unplugin": "^2.3.10"
   },
   "devDependencies": {
-    "@debbl/eslint-config": "^3.13.0",
+    "@debbl/eslint-config": "^3.14.3",
     "@types/node": "^24.10.0",
     "bumpp": "^10.3.1",
     "eslint": "^9.39.1",
