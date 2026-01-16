@@ -16,7 +16,7 @@
   "scripts": {
     "build": "pnpm --filter unplugin-lingui build",
     "test": "pnpm --filter unplugin-lingui test",
-    "release": "pnpm build && bumpp -r && pnpm publish -r",
+    "release": "bumpp -r",
     "typecheck": "pnpm --filter unplugin-lingui typecheck",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
