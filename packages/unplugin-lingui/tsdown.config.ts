@@ -5,7 +5,7 @@ export default defineConfig({
     'src/index.ts',
     'src/vite.ts',
     'src/esbuild.ts',
-    'src/form.ts',
+    'src/farm.ts',
     'src/rolldown.ts',
     'src/rollup.ts',
     'src/rspack.ts',

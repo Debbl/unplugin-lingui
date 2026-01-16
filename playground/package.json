@@ -11,27 +11,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lingui/core": "^5.5.2",
-    "@lingui/react": "^5.5.2",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "@lingui/core": "^5.7.0",
+    "@lingui/react": "^5.7.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@lingui/swc-plugin": "^5.6.1",
-    "@lingui/vite-plugin": "^5.5.2",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react": "^5.1.0",
-    "@vitejs/plugin-react-swc": "^4.2.1",
-    "eslint": "^9.39.1",
+    "@eslint/js": "^9.39.2",
+    "@lingui/swc-plugin": "^5.10.1",
+    "@lingui/vite-plugin": "^5.7.0",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitejs/plugin-react-swc": "^4.2.2",
+    "eslint": "^9.39.2",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^17.0.0",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.46.4",
+    "typescript-eslint": "^8.53.0",
     "unplugin-lingui": "workspace:*",
-    "vite": "^7.2.2",
+    "vite": "^7.3.1",
     "vite-plugin-inspect": "^11.3.3"
   }
 }

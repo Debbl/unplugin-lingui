@@ -2,7 +2,7 @@
   "name": "unplugin-lingui",
   "type": "module",
   "version": "0.0.7",
-  "packageManager": "pnpm@10.21.0",
+  "packageManager": "pnpm@10.28.0",
   "description": "unplugin for lingui",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
@@ -26,6 +26,7 @@
   "exports": {
     ".": "./dist/index.mjs",
     "./esbuild": "./dist/esbuild.mjs",
+    "./farm": "./dist/farm.mjs",
     "./rolldown": "./dist/rolldown.mjs",
     "./rollup": "./dist/rollup.mjs",
     "./rspack": "./dist/rspack.mjs",
@@ -33,8 +34,6 @@
     "./webpack": "./dist/webpack.mjs",
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
   "typesVersions": {
     "*": {
@@ -59,21 +58,21 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@lingui/cli": "^5.5.2",
-    "@lingui/conf": "^5.5.2",
-    "@lingui/format-json": "^5.5.2",
-    "unplugin": "^2.3.10"
+    "@lingui/cli": "^5.7.0",
+    "@lingui/conf": "^5.7.0",
+    "@lingui/format-json": "^5.7.0",
+    "unplugin": "^2.3.11"
   },
   "devDependencies": {
-    "@types/node": "^24.10.0",
-    "bumpp": "^10.3.1",
-    "eslint": "^9.39.1",
-    "lint-staged": "^16.2.6",
+    "@types/node": "^25.0.9",
+    "bumpp": "^10.4.0",
+    "eslint": "^9.39.2",
+    "lint-staged": "^16.2.7",
     "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.16.2",
+    "tsdown": "^0.20.0-beta.3",
     "typescript": "^5.9.3",
-    "vite": "^7.2.2",
-    "vitest": "^4.0.8",
-    "webpack": "^5.102.1"
+    "vite": "^7.3.1",
+    "vitest": "^4.0.17",
+    "webpack": "^5.104.1"
   }
 }
