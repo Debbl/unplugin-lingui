@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.8",
   "private": true,
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.2",
   "description": "unplugin-lingui-monorepo",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
